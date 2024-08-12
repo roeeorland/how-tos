@@ -11,7 +11,7 @@ Save the image to disc: docker save -o new_name_can_be_same_as_before.tar image_
 Once you have the tarball on the server load the image: docker load -i image_name.tar
 
 Then run the container with volume mount: 
-docker run -d -p 8080:8080 -v C:\Users\<YourUsername>\my-project:/workspace --name vscode-dev-container my-vscode-dev-env
+docker run -d -p 8080:8080 -v %cd%:/<new folder NOT IN USE!!!, otherwise you won't be able to find the virtual environment or add /read local files> --name vscode-dev-container my-vscode-dev-env
 
 open a browser window at localhost:8080 to get the vscode installation
 
