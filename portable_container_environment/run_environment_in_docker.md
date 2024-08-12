@@ -13,6 +13,9 @@ Once you have the tarball on the server load the image: docker load -i image_nam
 Then run the container with volume mount: 
 docker run -d -p 8080:8080 -v %cd%:/<new folder NOT IN USE!!!, otherwise you won't be able to find the virtual environment or add /read local files> --name vscode-dev-container my-vscode-dev-env
 
+on powershell it's ${PWD} instead of %cd%
+in linux I think it's just ./
+
 open a browser window at localhost:8080 to get the vscode installation
 
 to use the virtual environment you installed, go to the Python: select interpreter option in the search bar and use "Enter interpreter path" to find the installation (in this case it's ../workspace/venv/python)
