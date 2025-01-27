@@ -2,7 +2,7 @@ When creating an environment to run your code on the server, you might run into 
 to let you stick thousands of files on their server. 
 One solution is to create a docker image of your environment so that the safety people can approve a single binary instead.
 
-Adjust the attacker Dockerfile (name of requirements file, add the extensions folder with the .vsix files to get the python, debugger, docker and DevContainers installed automatically on the vscode-server, although you might not need the docker and DevContainers since the server is already running inside the container)
+Adjust the attached Dockerfile (name of requirements file, add the extensions folder with the .vsix files to get the python, debugger, docker and DevContainers installed automatically on the vscode-server, although you might not need the docker and DevContainers since the server is already running inside the container)
 
 Create the image: docker build -t image_name .
 
